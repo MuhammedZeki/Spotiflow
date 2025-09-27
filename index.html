@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>spotiflow</title>
+  </head>
+  <body>
+    <header>
+      <div class="main-header">
+        <div class="header-menu-bar">
+          <i class="fa-solid fa-bars"></i> 
+        </div>
+        <div class="header-app">
+          <div class="header-logo">
+            <i class="fa-solid fa-music"></i>
+          </div>
+          <p class="header-name">Spotiflow</p>
+        </div>
+        <div class="header-search">
+          <i class="fa-solid fa-magnifying-glass"></i> 
+          <input type="text" placeholder="Sanatçı, şark, albüm">
+        </div>
+        <div class="header-profile">
+          <span class="header-profile-name">MZ</span>
+        </div>
+      </div>
+    </header>
+  </body>
+  <script>
+    const searchInput = document.querySelector('.header-search input');
+    const headerSearchDiv = document.querySelector('.header-search');
+
+    searchInput.addEventListener('focus', function() {
+        headerSearchDiv.classList.add('is-focused');
+    });
+    searchInput.addEventListener('blur', function() {
+        headerSearchDiv.classList.remove('is-focused');
+    });
+  </script>
+</html>

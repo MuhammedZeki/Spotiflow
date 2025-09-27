@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    color: #fff;
+}
+
+/* HEADER */
+header{
+    background-color: black;
+    padding: 0.7rem 1rem ;
+}
+
+
+.main-header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.header-menu-bar{
+    font-size: 1rem;
+    cursor: pointer;
+}
+.header-app{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.header-logo{
+    width: 2rem;
+    height: 2rem;
+    background-color: #1eba55 ;
+    border-radius: 100%;
+    position: relative;
+}
+.header-logo i{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.45rem;
+    color: black;
+}
+.header-name{
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.1rem;
+}
+.header-search{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    border: 1px solid transparent;
+}
+.header-search i{
+    font-size: 0.8rem;
+    color: #757575;
+    cursor: pointer;
+
+}
+.header-search input:focus{
+    outline: none;
+    cursor: pointer;
+}
+.header-search.is-focused {
+  border: 1px solid #1DB954; 
+  border-radius: 0.3rem;   
+  cursor: pointer;
+}
+.header-search,
+.header-search input{
+    width: 100%;
+    background-color: #171717;
+}
+.header-search input{
+    border: none;
+    color: #757575;
+    cursor: pointer;
+}
+.header-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.header-profile span{
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+/* 
+Arka plan rengi : #1a1b1c
+
+arama çubugu arka plan Ç :#171717
+arama çubugu yazı :#757575
+arama cubugu search icon : #fcfcfc
+
+logo color : #fff
+menu bar:#fff
+
+sağ profil:#333333
+sağ ğrofil yazı:#dbdbdb
+
+sol side bar blam : #171717
+logo yeşil : #1eba55 
+
+<i class="fa-regular fa-bars"></i>
+<i class="fa-solid fa-music"></i>
+<i class="fa-regular fa-magnifying-glass"></i>
+*/
