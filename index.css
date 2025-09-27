@@ -95,6 +95,11 @@ header{
     font-size: 0.8rem;
     letter-spacing: 0.1rem;
 }
+
+
+@media (max-width:500px){
+    .header-app{display: none;}
+}
 /* 
 Arka plan rengi : #1a1b1c
 
