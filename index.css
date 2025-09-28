@@ -11,7 +11,7 @@ html{
 /* HEADER */
 header{
     background-color: black;
-    padding: 0.8rem 1rem ;
+    padding:  1rem ;
 }
 
 
@@ -105,7 +105,7 @@ main{
     background-color: #171717;
     width: 13%;
     padding: 1rem 0.5rem;
-    border-right: 1px solid #333;
+    border-right: 1px solid #1f1f1f;
 }
 .main-menu{
     display: flex;
@@ -161,7 +161,7 @@ main{
     background-color: #171717;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    border: 1px solid #333;
+    border: 1px solid #1f1f1f;
     cursor: pointer;
     transition: transform 0.5s ease-in-out;
 }
@@ -247,6 +247,91 @@ tbody td:first-child {
 tbody td:last-child {
     text-align: right;
     color: #b3b3b3;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    padding: 1.4rem 2rem;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-music-name {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.music-name-inform h4{
+    font-family: "Inter", sans-serif;
+}
+.music-name-inform p{
+    margin-top: 0.2rem;
+    color: #b3b3b3;
+    font-family: 'Nunito', sans-serif;
+
+}
+.footer-music-name img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.footer-button{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.backward-step,
+.forward{
+    background-color: #121212;
+    border: 1px solid #1f1f1f;
+    color: #ebebeb;
+    padding: 0.8rem 1rem ;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.pause{
+    background-color: #1DB954;
+    padding: 0.8rem 1rem ;
+    border-radius: 5px;  
+    color: black; 
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.backward-step:hover,
+.forward:hover{
+    border: 1px solid #414040;
+    background-color: #1f1f1f;
+}
+.pause:hover{
+    background-color: #1ed760;
+}
+.footer-time{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+.footer-time span{
+    font-family: "Inter", sans-serif;
+}
+.times{
+    background-color: #333;
+    width: 200px;
+    height: 5px;
+    border-radius: 5px;
+}
+.time{
+    position: absolute;
+    height: 5px;
+    width: 50px;
+    background-color: #1DB954;
+    border-radius: 5px;
+
 }
 @media (max-width:500px){
     .header-app{display: none;}
