@@ -11,7 +11,7 @@ html{
 /* HEADER */
 header{
     background-color: black;
-    padding: 0.7rem 1rem ;
+    padding: 0.8rem 1rem ;
 }
 
 
@@ -117,7 +117,7 @@ main{
     text-decoration: none;
     color: #b3b3b3;
     font-family: "Inter", sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0.5rem;
     border: 1px solid transparent;
 }
@@ -153,6 +153,7 @@ main{
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    flex-wrap: wrap;
 }
 .main-content-card{
     display: flex;
@@ -249,6 +250,9 @@ tbody td:last-child {
 }
 @media (max-width:500px){
     .header-app{display: none;}
+    .main-sidebar{display: none;}
+    .main-content{width: 100%;}
+ 
 }
 /* 
 Arka plan rengi : #1a1b1c
