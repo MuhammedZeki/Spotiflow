@@ -260,6 +260,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer-music-name {
     display: flex;
@@ -337,7 +338,13 @@ footer{
     .header-app{display: none;}
     .main-sidebar{display: none;}
     .main-content{width: 100%;}
- 
+    .footer-music-name,
+    .footer-button,
+    .footer-time{
+        width: 100%;
+        justify-content: center;
+        margin-bottom:1rem ;
+    }
 }
 /* 
 Arka plan rengi : #1a1b1c
